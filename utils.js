@@ -1,5 +1,5 @@
 const fs = require('fs')
-
+const {exec} = require('child_process')
 module.exports.readRecursive = (path) => {
   let list = []
   let files = fs.readdirSync(path)
@@ -18,4 +18,3 @@ module.exports.readRecursive = (path) => {
   }
   return list
 }
-
