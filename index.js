@@ -8,6 +8,7 @@ const {exec} = require('child_process')
 const app = express()
 const {readRecursive} = require('./utils')
 
+app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(cors())
 app.use(helmet())
@@ -16,8 +17,9 @@ app.get('/files', (req, res) => {
   res.json(readRecursive(process.env.SCAN_PATH))
 })
 
-app.delete('/file', (req, res) => {
+app.post('/file', (req, res) => {
   try {
+    console.log(req.body)
     exec(`rm -rf ${req.body.filePath}`)
     res.json({error: false})
   } catch (e) {
