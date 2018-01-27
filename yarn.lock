@@ -264,6 +264,10 @@ lodash.reduce@4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.reduce/-/lodash.reduce-4.6.0.tgz#f1ab6b839299ad48f784abbf476596f03b914d3b"
 
+macaddress@^0.2.8:
+  version "0.2.8"
+  resolved "https://registry.yarnpkg.com/macaddress/-/macaddress-0.2.8.tgz#5904dc537c39ec6dbefeae902327135fa8511f12"
+
 media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
@@ -405,6 +409,12 @@ type-is@~1.6.15:
   dependencies:
     media-typer "0.3.0"
     mime-types "~2.1.15"
+
+uniqid@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/uniqid/-/uniqid-4.1.1.tgz#89220ddf6b751ae52b5f72484863528596bb84c1"
+  dependencies:
+    macaddress "^0.2.8"
 
 universalify@^0.1.0:
   version "0.1.1"
